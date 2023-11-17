@@ -40,7 +40,7 @@ func main() {
 	defer outputFile.Close()
 
 	// Encode to jpg
-	err = jpeg.Encode(outputFile, img, &jpeg.Options{Quality: 80})
+	err = jpeg.Encode(outputFile, img, &jpeg.Options{Quality: 100})
 	if err != nil {
 		panic(err)
 	}
